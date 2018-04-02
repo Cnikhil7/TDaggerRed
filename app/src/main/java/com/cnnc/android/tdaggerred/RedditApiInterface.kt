@@ -9,6 +9,6 @@ interface RedditApiInterface {
 
     @GET("/r/{listings}/.json")
     fun getListFromListing(@Path("listing") listing: String
-                           , @Query("limit") limit: Int): Single<String>
+                           , @Query("limit") limit: Int = 10): Single<String>
 
 }

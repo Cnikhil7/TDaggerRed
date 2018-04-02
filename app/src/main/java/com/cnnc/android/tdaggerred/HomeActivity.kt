@@ -1,15 +1,13 @@
 package com.cnnc.android.tdaggerred
 
+//import com.cnnc.android.tdaggerred.di.NetworkModule
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.cnnc.android.tdaggerred.di.NetworkModule
-import retrofit2.Retrofit
-import javax.inject.Inject
 
 class HomeActivity : AppCompatActivity() {
 
-    @Inject
-    lateinit var networkModule: NetworkModule
+//    @Inject
+//    lateinit var networkModule: NetworkModule
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +18,15 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun initialiseLateINITs() {
-        val retrofit : Retrofit = networkModule.provideRetrofit()
-        retrofit.create(RedditApiInterface::class.java)
+
+
+//
+//
+//        val retrofit: Retrofit = networkModule.provideRetrofit()
+//        var service: RedditApiInterface = retrofit.create(RedditApiInterface::class.java)
+//
+//        service.getListFromListing(listing = "top")
+
+
     }
 }
